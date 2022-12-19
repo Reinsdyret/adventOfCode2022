@@ -1,4 +1,5 @@
 
+main :: IO ()
 main = do
   content <- readFile "day1Input.txt"
   putStrLn $ show $ maximum $ getCalorieSums (lines content)

@@ -1,10 +1,10 @@
 def startSignal(line):
     charSet = set()
-    for i in range(0,len(line),4):
-        for j in range(i,i+4):
+    for i in range(0, len(line), 4):
+        for j in range(i, i+4):
             charSet.add(line[j])
             print(len(charSet))
-        if(len(charSet) == 4):
+        if (len(charSet) == 4):
             return i
             break
         else:
